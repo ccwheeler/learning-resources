@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@30..200,24&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.google.com/specimen/Share+Tech+Mono/about?classification=Monospace");
+
+body {
+  //   margin: 0;
+}
+
+@font-palette-values --Nabla {
+  font-family: Nabla;
+  base-palette: 3;
+}
+
+p,
+li,
+.theme-doc-sidebar-item-link,
+.theme-doc-sidebar-item-link-level-1 {
+  font-family: "Share Tech Mono";
+}
+
+// .navbar__title,
+.navbar__item,
+h1,
+h2,
+h3,
+.menu__list-item-collapsible {
+  font-family: "Share Tech Mono";
+  font-weight: 900;
+  // font-size: 20px;
+  // font-family: Nabla;
+  // animation: depth 1s ease-in-out alternate infinite;
+  // position: relative;
+  // display: inline-block;
+  // font-variation-settings: "EDPT" 100;
+  // font-palette: --Nabla;
+  // @for $i from 1 through 12 {
+  //   &:nth-child(#{$i}) {
+  //     animation-delay: $i * 0.01s;
+  //   }
+  // }
+}
+
+.menu__link--sublist-caret::after {
+  display: none;
+}
+
+// @keyframes depth {
+//   0% {
+//     transform: translatex(0) translatey(0);
+//   }
+//   100% {
+//     font-variation-settings: "EDPT" 160;
+//     transform: translatex(0.1em) translatey(0.05em);
+//   }
+// }
+
+.navbar__logo img {
+  scale: 180%;
+}

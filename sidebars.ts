@@ -32,22 +32,30 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "The Basics",
-      items: ["Frontend/HTML-CSS/HTML", "Frontend/HTML-CSS/CSS"],
+      items: ["Frontend/HTML-CSS/HTML/HTML", "Frontend/HTML-CSS/CSS/CSS"],
     },
 
     {
       type: "category",
-      label: "Adding APIs & Backend",
-      items: [
-        "Frontend/APIs/APIs",
-        "Frontend/APIs/GraphQL",
-        "Backend/NodeJS/NodeJS",
-      ],
+      label: "Adding Interactivity",
+      items: ["Frontend/Javascript/Javascript"],
+    },
+
+    {
+      type: "category",
+      label: "Adding APIs ",
+      items: ["Frontend/APIs/APIs", "Frontend/APIs/GraphQL"],
     },
     {
       type: "category",
       label: "Frameworks",
       items: ["Frontend/React/React", "Frontend/NextJS/NextJS"],
+    },
+
+    {
+      type: "category",
+      label: "Making a Backend",
+      items: ["Backend/NodeJS/NodeJS"],
     },
 
     // {
@@ -58,7 +66,11 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Advanced Styling",
-      items: ["Frontend/HTML-CSS/TailwindCSS", "Frontend/HTML-CSS/SASS"],
+      items: [
+        "Frontend/HTML-CSS/CSS/Animations",
+        "Frontend/HTML-CSS/CSS/TailwindCSS",
+        "Frontend/HTML-CSS/CSS/SASS",
+      ],
     },
   ],
   backendSidebar: [

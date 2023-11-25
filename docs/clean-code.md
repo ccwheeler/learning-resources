@@ -1,0 +1,1 @@
+- “quality code” means little to no bugs, simply maintainable and easy scalability
