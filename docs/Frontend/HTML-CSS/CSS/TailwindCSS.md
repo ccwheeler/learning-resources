@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# CSS
+# TailwindCSS
 
 - https://www.freecodecamp.org/news/search/?query=css/
 

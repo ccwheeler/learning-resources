@@ -19,59 +19,31 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: ["todo", "resources"],
   frontendSidebar: [
     "Frontend/intro",
-    {
-      type: "category",
-      label: "Computer Science",
-      items: [
-        "Frontend/Computer-Science/how-the-internet-works",
-        "Frontend/Computer-Science/early-programming",
-        "Frontend/Computer-Science/Algorithms",
-        "Frontend/Computer-Science/computer-science",
-      ],
-    },
-    {
-      type: "category",
-      label: "The Basics",
-      items: ["Frontend/HTML-CSS/HTML/HTML", "Frontend/HTML-CSS/CSS/CSS"],
-    },
+    "Frontend/Computer-Science/how-the-internet-works",
+    "Frontend/Computer-Science/early-programming",
+    "Frontend/Computer-Science/Algorithms",
+    "Frontend/Computer-Science/computer-science",
 
-    {
-      type: "category",
-      label: "Adding Interactivity",
-      items: ["Frontend/Javascript/Javascript"],
-    },
+    "Frontend/HTML-CSS/HTML/HTML",
+    "Frontend/HTML-CSS/CSS/CSS",
 
-    {
-      type: "category",
-      label: "Adding APIs ",
-      items: ["Frontend/APIs/APIs", "Frontend/APIs/GraphQL"],
-    },
-    {
-      type: "category",
-      label: "Frameworks",
-      items: ["Frontend/React/React", "Frontend/NextJS/NextJS"],
-    },
+    "Frontend/Javascript/Javascript",
 
-    {
-      type: "category",
-      label: "Making a Backend",
-      items: ["Backend/NodeJS/NodeJS"],
-    },
+    "Backend/NodeJS/NodeJS",
+    "Frontend/APIs/APIs",
+    "Frontend/APIs/GraphQL",
+    "Frontend/React/React",
+    "Frontend/NextJS/NextJS",
 
     // {
     //   type: "category",
     //   label: "Clean Code",
     //   items: [],
     // },
-    {
-      type: "category",
-      label: "Advanced Styling",
-      items: [
-        "Frontend/HTML-CSS/CSS/Animations",
-        "Frontend/HTML-CSS/CSS/TailwindCSS",
-        "Frontend/HTML-CSS/CSS/SASS",
-      ],
-    },
+
+    "Frontend/HTML-CSS/CSS/Animations",
+    "Frontend/HTML-CSS/CSS/TailwindCSS",
+    "Frontend/HTML-CSS/CSS/SASS",
   ],
   backendSidebar: [
     {
