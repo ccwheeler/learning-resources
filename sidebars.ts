@@ -18,11 +18,18 @@ const sidebars: SidebarsConfig = {
 
   tutorialSidebar: ["todo", "resources"],
   frontendSidebar: [
-    "Frontend/intro",
+
+     {
+      type: "category",
+      label: "Computer Science",
+      
+      items: ["Frontend/intro",
     "Frontend/Computer-Science/how-the-internet-works",
     "Frontend/Computer-Science/early-programming",
     "Frontend/Computer-Science/Algorithms",
-    "Frontend/Computer-Science/computer-science",
+    "Frontend/Computer-Science/computer-science",],
+    },
+    
 
     "Frontend/HTML-CSS/HTML/HTML",
     "Frontend/HTML-CSS/CSS/CSS",
@@ -34,16 +41,19 @@ const sidebars: SidebarsConfig = {
     "Frontend/APIs/GraphQL",
     "Frontend/React/React",
     "Frontend/NextJS/NextJS",
-
-    // {
-    //   type: "category",
-    //   label: "Clean Code",
-    //   items: [],
-    // },
+  // {
+  //     type: "category",
+  //     label: "Clean Code",
+  //     items: [],
+  //   },
+   
 
     "Frontend/HTML-CSS/CSS/Animations",
     "Frontend/HTML-CSS/CSS/TailwindCSS",
     "Frontend/HTML-CSS/CSS/SASS",
+  ],
+  projectSidebar: [
+    "Projects/Marketplace"
   ],
   backendSidebar: [
     {
