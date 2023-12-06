@@ -3,12 +3,12 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Learn with Lottie 🏴󠁧󠁢󠁷󠁬󠁳󠁿",
-  tagline: "Dinosaurs are cool",
+  title: "💻 Become a Software Engineer 💻",
+  tagline: "All the 🤓 resources I've collected on my journey to Senior 👩‍💻 🚀, it's all split up by topic 📚, so pick and choose what works for 🫵.",
   // favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://engineer-learning-resources.vercel.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -67,36 +67,22 @@ const config: Config = {
         src: "img/giphy2.gif",
       },
       items: [
-        {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Tutorial",
-        },
+      
 
         {
           type: "docSidebar",
           sidebarId: "frontendSidebar",
           position: "left",
-          label: "Frontend",
-        }, {
-          type: "docSidebar",
-          sidebarId: "projectSidebar",
-          position: "left",
-          label: "Projects",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "backendSidebar",
-          position: "left",
-          label: "Backend",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "cyberSidebar",
-          position: "left",
-          label: "CyberSecurity",
-        },
+          label: "Learn 🤓",
+        }, 
+        
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "projectSidebar",
+        //   position: "left",
+        //   label: "Projects 🔨",
+        // },
+        
         // { to: "/blog", label: "Blog", position: "left" },
       ],
     },

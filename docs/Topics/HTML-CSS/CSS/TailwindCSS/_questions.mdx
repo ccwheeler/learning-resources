@@ -1,0 +1,72 @@
+<details>
+<summary>**What is Tailwind CSS?**</summary>
+
+Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build designs directly in your markup. It allows you to rapidly prototype and build modern user interfaces with minimal custom CSS.
+
+From the words of the Tailwindcss team themselves, Tailwindcss is “A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup”.
+
+</details>
+
+<details>
+<summary>**How is Tailwind CSS different from other CSS frameworks like Bootstrap?**</summary>
+
+Unlike traditional CSS frameworks that come with predefined components, Tailwind CSS focuses on providing a set of utility classes. This gives developers more flexibility and control over the styling of their components without adding unnecessary CSS bloat.
+
+</details>
+
+<details>
+<summary>**What is the purpose of utility-first CSS in Tailwind?**</summary>
+
+The utility-first approach in Tailwind CSS means that styling is applied using small, single-purpose utility classes directly in the HTML markup. This approach promotes a more scalable and maintainable way to write styles, allowing you to compose designs using simple and predictable classes.
+
+</details>
+
+<details>
+<summary>**Can I use Tailwind CSS with other CSS frameworks or preprocessors?**</summary>
+
+Yes, Tailwind CSS can be used alongside other CSS frameworks or preprocessors. It's designed to be a utility layer that can complement your existing styles. You can also configure Tailwind to work seamlessly with preprocessors like Sass or Less.
+
+</details>
+
+<details>
+<summary>**How can I customize the default styles provided by Tailwind CSS?**</summary>
+
+Tailwind CSS allows extensive customization through its configuration file (usually named `tailwind.config.js`). You can modify colors, spacing, breakpoints, and more to match the design requirements of your project.
+
+</details>
+
+<details>
+<summary>**What is JIT (Just-In-Time) mode in Tailwind CSS?**</summary>
+
+JIT mode is a feature in Tailwind CSS that enables on-the-fly generation of your styles during development. This can significantly improve build times by generating only the styles that are actually used in your project, rather than generating a large pre-built stylesheet.
+
+</details>
+
+<details>
+<summary>**How does PurgeCSS work with Tailwind CSS?**</summary>
+
+PurgeCSS is a tool that helps remove unused CSS styles from your production build. When using Tailwind CSS with PurgeCSS, it scans your project for HTML files and removes any unused utility classes, resulting in a smaller and more optimized stylesheet for deployment.
+
+</details>
+
+<details>
+<summary>**Why might TailwindCSS be a bad choice for your codebase?**</summary>
+
+- the bundle size is very large
+- if working with others, there's sometimes a large learning curve
+- messy inline html isn't easy to read
+- if using many custom classes, you don't want a mix of inline and .css / .scss
+
+</details>
+
+<details>
+<summary>**What are some tips for tailwindCSS success?**</summary>
+
+- Check out the [Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet) for quickly finding what you need
+- If you use VS Code, the official [Tailwind CSS IntelliSense extension](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) is a must-have. After a while, it becomes natural.
+- In situations where you often repeat classes, you can extract custom classes using the ["@apply"](https://tailwindcss.com/docs/functions-and-directives#apply) directive or the [theme function](https://tailwindcss.com/docs/functions-and-directives#theme) which is what I would recommend. Using React
+- The most popular pre-built components that comes to mind is [Daisy UI](https://react.daisyui.com/?path=/story/welcome--page). It takes a more abstracted approach, massively helpful for theming
+- Learn about group and peer selectors, they are very useful; read this section about [Dynamic class names](https://tailwindcss.com/docs/content-configuration#dynamic-class-names) and its do's and dont's
+- making responsive design is very easy in Tailwind, don't forget to learn about the [responsive modifiers: sm, md, lg etc.](https://tailwindcss.com/docs/responsive-design)
+
+</details>

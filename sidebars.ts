@@ -16,31 +16,83 @@ const sidebars: SidebarsConfig = {
 
   // But you can create a sidebar manually
 
-  tutorialSidebar: ["todo", "resources"],
+
   frontendSidebar: [
 
      {
       type: "category",
       label: "Computer Science",
-      
-      items: ["Frontend/intro",
-    "Frontend/Computer-Science/how-the-internet-works",
-    "Frontend/Computer-Science/early-programming",
-    "Frontend/Computer-Science/Algorithms",
-    "Frontend/Computer-Science/computer-science",],
+
+      items: [
+    "Topics/Computer-Science/how-the-internet-works",
+    "Topics/Computer-Science/early-programming",
+    "Topics/Computer-Science/Algorithms",
+    "Topics/Computer-Science/computer-science",],
     },
+    "Topics/VSCode",
+
+    "Topics/HTML-CSS/HTML/HTML",
+ "Topics/HTML-CSS/CSS/CSS/CSS",
+   
+
+    "Topics/Javascript/Javascript",
+    
+    "Topics/Node/npm/npm",
+
+
+    
+  
+{
+      type: "category",
+      label: "Git 🥷 ⭐️",
+      items: [      
+
+   "Topics/Git/Git/Git",
+    "Topics/Git/Github/Github",],
+    },
+   
+
+  {
+      type: "category",
+      label: "Application Programming Interface 🔌 🛜",
+      items: [      
+
+   "Topics/APIs/APIs",
+    "Topics/APIs/GraphQL",],
+    },
+
+    "Topics/React/React",
+
+      {
+      type: "category",
+      label: "React Frameworks ⚙️ 🔭",
+      items: [      
+
+    "Topics/NextJS/NextJS",],
+    },
+
     
 
-    "Frontend/HTML-CSS/HTML/HTML",
-    "Frontend/HTML-CSS/CSS/CSS",
+        {
+      type: "category",
+      label: "Advanced Styling 🎨 🖌️",
+      items: [      
+    "Topics/HTML-CSS/CSS/Animations",
+    "Topics/HTML-CSS/CSS/TailwindCSS/TailwindCSS",
+    "Topics/HTML-CSS/CSS/SASS",],
+    },
+      "Topics/Node/NodeJS/NodeJS",
 
-    "Frontend/Javascript/Javascript",
 
-    "Backend/NodeJS/NodeJS",
-    "Frontend/APIs/APIs",
-    "Frontend/APIs/GraphQL",
-    "Frontend/React/React",
-    "Frontend/NextJS/NextJS",
+    //         {
+    //   type: "category",
+    //   label: "Databases",
+    //   items: [      
+    // "Topics/HTML-CSS/CSS/Animations", // SQL
+    // "Topics/HTML-CSS/CSS/TailwindCSS/TailwindCSS",
+    // "Topics/HTML-CSS/CSS/SASS",],
+    // },
+   
   // {
   //     type: "category",
   //     label: "Clean Code",
@@ -48,22 +100,33 @@ const sidebars: SidebarsConfig = {
   //   },
    
 
-    "Frontend/HTML-CSS/CSS/Animations",
-    "Frontend/HTML-CSS/CSS/TailwindCSS",
-    "Frontend/HTML-CSS/CSS/SASS",
-  ],
-  projectSidebar: [
-    "Projects/Marketplace"
-  ],
-  backendSidebar: [
+
     {
       type: "category",
       label: "Cloud Infrastructure",
-      items: ["Backend/Cloud/Cloud"],
+      items: ["Topics/Cloud/Cloud"],
+    },
+
+
+
+      {
+      type: "category",
+      label: "Cyber Security",
+      items: ["Topics/Cybersecurity/Books", "Topics/Cybersecurity/Courses"],
     },
   ],
-  cyberSidebar: ["Cybersecurity/Books", "Cybersecurity/Courses"],
-  // leadershipSidebar: ["Cybersecurity/Books", "Cybersecurity/Courses"], // ace interviews, manage people, kindness
+  // projectSidebar: [
+
+  //    {
+  //     type: "category",
+  //     label: "Test yourself",
+  //     items: ["Projects/Challenges"],
+  //   },
+  //   "Projects/Marketplace"
+
+    
+  // ],
+  
 };
 
 export default sidebars;

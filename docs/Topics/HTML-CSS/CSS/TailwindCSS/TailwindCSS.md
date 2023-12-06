@@ -2,6 +2,11 @@
 sidebar_position: 1
 ---
 
+import { DocsTabs } from "../../../../../src/components/Tabs/DocsTabs";
+
+import Questions from "./\_questions.mdx";
+import Resources from "./\_resources.mdx";
+
 # TailwindCSS
 
 - https://www.freecodecamp.org/news/search/?query=css/
@@ -32,19 +37,6 @@ https://play.tailwindcss.com/
 
 ### VSCode
 
-- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-- [Tailwind Fold (temporarily hide the classes)](https://marketplace.visualstudio.com/items?itemName=stivo.tailwind-fold)
-
----
-
-- [Paid DevTools](https://devtoolsfortailwind.com/?ref=browsee.io)
-
----
-
-- [TailwindCSS Repo](https://github.com/tailwindlabs/tailwindcss)
-
----
-
 ### Tailwind Component Libraries
 
 - [DaisyUi](https://daisyui.com/)
@@ -63,3 +55,5 @@ Alternatives
 ## Styled Components
 
 - [Styled Components vs TailwindCSS](https://www.dhiwise.com/post/styled-components-vs-tailwind-css-finding-the-perfect-style-for-your-react-project)
+
+<DocsTabs Questions={<Questions />} Resources={<Resources />} />

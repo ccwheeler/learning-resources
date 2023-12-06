@@ -4,16 +4,14 @@ import TabItem from "@theme/TabItem";
 export const DocsTabs = ({ Resources, Questions, Books }) => {
   return (
     <Tabs
-      defaultValue="resources"
+      defaultValue="questions"
       values={[
-        { label: "Resources", value: "resources" },
         { label: "Questions", value: "questions" },
-        // { label: "Books", value: "books" },
+        { label: "Resources", value: "resources" },
       ]}
     >
-      <TabItem value="resources"> {Resources}</TabItem>
       <TabItem value="questions"> {Questions}</TabItem>
-      {/* <TabItem value="books">This is a banana 🍌{Books}</TabItem> */}
+      <TabItem value="resources"> {Resources}</TabItem>
     </Tabs>
   );
 };

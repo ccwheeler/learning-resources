@@ -1,4 +1,4 @@
-# A good place to start
+# Visual Studio Code
 
 - Download your code editor https://code.visualstudio.com/
 
