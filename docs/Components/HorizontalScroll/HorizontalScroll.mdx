@@ -8,13 +8,50 @@ import DemoCards from "./DemoCards";
 
 <HorizontalScrollSimple>{DemoCards()}</HorizontalScrollSimple>
 
+<details>
+<summary>Javascript</summary>
+
+```js
+import React from "react";
+import styles from "./HorizontalScrollSimple.module.css";
+
+const HorizontalScrollSimple = ({ children }) => {
+  return <div className={`${styles.horizontalScrollWrapper} `}>{children}</div>;
+};
+
+export default HorizontalScrollSimple;
+```
+
+</details>
+
+<details>
+<summary>CSS</summary>
+```css
+
+.horizontalScrollWrapper {
+overflow-y: scroll;
+display: flex;
+flex-direction: row;
+height: 150px;
+}
+
+.horizontalScrollWrapper::-webkit-scrollbar {
+display: none;
+}
+
+````
+</details>
+
+
 ### Horizontal Scroll Fancy
 
 <HorizontalScrollFancy>{DemoCards()}</HorizontalScrollFancy>
 
 <details>
 <summary>Javascript</summary>
-```
+
+```js
+
 import styles from "./HorizontalScrollFancy.module.css";
 
 import React, {
@@ -113,22 +150,20 @@ return (
 
 export default HorizontalScrollFancy;
 
-```
+````
+
 </details>
-
-
-
-
 
 <details>
 <summary>CSS</summary>
-```
-
-/_ HorizontalScrollFancy.module.css _/
+```css
 
 .horizontalScrollWrapper {
 position: relative;
 width: 100%;
+
+height: 150px;
+margin-bottom: 20px;
 }
 
 .scrollArrow {
@@ -136,10 +171,9 @@ position: absolute;
 cursor: pointer;
 z-index: 5;
 width: 30px;
-height: 30px;
 display: flex;
-justify-content: flex-end;
 align-items: center;
+background-color: aliceblue;
 }
 
 .scrollArrow.left {
@@ -150,6 +184,8 @@ transform: scale(130%) rotate(180deg);
 .scrollArrow.right {
 right: 1rem;
 transform: scale(130%);
+top: 0;
+z-index: 10;
 }
 
 .horizontalScroll {
@@ -158,7 +194,7 @@ overflow-y: hidden;
 flex: row;
 display: flex;
 flex-direction: row;
-
+height: 150px;
 position: relative;
 -ms-overflow-style: none; /_ Internet Explorer 10+ _/
 scrollbar-width: none; /_ Firefox _/
@@ -172,7 +208,7 @@ display: none; /_ Safari and Chrome _/
 position: absolute;
 top: 0;
 height: 100%;
-width: 36px;
+width: 136px;
 pointer-events: none;
 z-index: 6;
 background: linear-gradient(

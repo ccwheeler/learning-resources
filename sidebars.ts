@@ -29,7 +29,7 @@ const sidebars: SidebarsConfig = {
     "Topics/Computer-Science/Algorithms",
     "Topics/Computer-Science/computer-science",],
     },
-    "Topics/VSCode",
+    "Topics/Tools/VSCode",
 
     "Topics/HTML-CSS/HTML/HTML",
  "Topics/HTML-CSS/CSS/CSS/CSS",
@@ -62,6 +62,9 @@ const sidebars: SidebarsConfig = {
     },
 
     "Topics/React/React",
+
+
+    "Topics/Tools/Dev-Tools",
 
       {
       type: "category",

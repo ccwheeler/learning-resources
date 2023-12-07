@@ -94,8 +94,14 @@ h3,
 p > img {
   align-self: center;
   justify-self: center;
-  max-width: 600px !important;
+  width: 600px ;
   border-radius: 20px;
+    max-width: 80vw;
+}
+
+iframe {
+    border-radius: 20px;
+    max-width: 90vw;
 }
 
 // /**

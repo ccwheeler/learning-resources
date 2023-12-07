@@ -1,19 +1,7 @@
-import React, {
-  ReactNode,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import React from "react";
 import styles from "./HorizontalScrollSimple.module.css";
 
-interface HorizontalScrollProps {
-  children: ReactNode;
-}
-
-const HorizontalScrollSimple: React.FC<HorizontalScrollProps> = ({
-  children,
-}) => {
+const HorizontalScrollSimple = ({ children }) => {
   return <div className={`${styles.horizontalScrollWrapper} `}>{children}</div>;
 };
 
