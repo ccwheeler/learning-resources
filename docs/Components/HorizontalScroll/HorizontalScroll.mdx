@@ -1,0 +1,209 @@
+import HorizontalScrollFancy from "./HorizontalScrollFancy";
+import HorizontalScrollSimple from "./HorizontalScrollSimple";
+import DemoCards from "./DemoCards";
+
+# Horizontal Scroll
+
+### Horizontal Scroll Simple
+
+<HorizontalScrollSimple>{DemoCards()}</HorizontalScrollSimple>
+
+### Horizontal Scroll Fancy
+
+<HorizontalScrollFancy>{DemoCards()}</HorizontalScrollFancy>
+
+<details>
+<summary>Javascript</summary>
+```
+import styles from "./HorizontalScrollFancy.module.css";
+
+import React, {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
+
+import { RightArrow } from "../Icons/RightArrow";
+
+interface HorizontalScrollProps {
+children: ReactNode;
+blueFade?: boolean;
+}
+
+const HorizontalScrollFancy: React.FC<HorizontalScrollProps> = ({
+children,
+blueFade = false,
+}) => {
+const [isScrolled, setIsScrolled] = useState(false);
+const [canScrollLeft, setCanScrollLeft] = useState(false);
+const [canScrollRight, setCanScrollRight] = useState(false);
+const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+const checkForScrollPosition = useCallback(() => {
+const el = scrollContainerRef.current;
+if (el) {
+const maxScrollLeft = el.scrollWidth - el.clientWidth;
+setCanScrollLeft(el.scrollLeft > 0);
+setCanScrollRight(el.scrollLeft < maxScrollLeft);
+setIsScrolled(el.scrollLeft > 0);
+}
+}, []);
+
+const handleScroll = useCallback(
+(event: React.UIEvent<HTMLDivElement>) => {
+checkForScrollPosition();
+},
+[checkForScrollPosition]
+);
+
+useEffect(() => {
+checkForScrollPosition();
+}, [checkForScrollPosition]);
+
+const scroll = (direction: "left" | "right") => {
+if (scrollContainerRef.current) {
+const scrollAmount = 100;
+scrollContainerRef.current.scrollBy({
+left: direction === "left" ? -scrollAmount : scrollAmount,
+behavior: "smooth",
+});
+}
+};
+
+return (
+
+<div className={styles.horizontalScrollWrapper}>
+  {canScrollLeft && (
+    <button
+      className={`${styles.scrollArrow} ${styles.left}`}
+      onClick={() => scroll("left")}
+    >
+      <RightArrow theme="currentColor" />
+    </button>
+  )}
+  <div
+    className={`${styles.horizontalScrollFades}  ${styles.left}  ${
+      isScrolled ? styles.visible : styles.invisible
+    }`}
+  ></div>
+  <div
+    className={styles.horizontalScroll}
+    onScroll={handleScroll}
+    ref={scrollContainerRef}
+  >
+    {children}
+  </div>
+  <div
+    className={`${styles.horizontalScrollFades} ${styles.right}  ${
+      canScrollRight ? styles.visible : styles.invisible
+    }`}
+  ></div>
+  {canScrollRight && (
+    <button
+      className={`${styles.scrollArrow} ${styles.right}`}
+      onClick={() => scroll("right")}
+    >
+      <RightArrow theme="currentColor" />
+    </button>
+  )}
+</div>
+); };
+
+export default HorizontalScrollFancy;
+
+```
+</details>
+
+
+
+
+
+<details>
+<summary>CSS</summary>
+```
+
+/_ HorizontalScrollFancy.module.css _/
+
+.horizontalScrollWrapper {
+position: relative;
+width: 100%;
+}
+
+.scrollArrow {
+position: absolute;
+cursor: pointer;
+z-index: 5;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.scrollArrow.left {
+left: 1rem;
+transform: scale(130%) rotate(180deg);
+}
+
+.scrollArrow.right {
+right: 1rem;
+transform: scale(130%);
+}
+
+.horizontalScroll {
+overflow-x: auto;
+overflow-y: hidden;
+flex: row;
+display: flex;
+flex-direction: row;
+
+position: relative;
+-ms-overflow-style: none; /_ Internet Explorer 10+ _/
+scrollbar-width: none; /_ Firefox _/
+}
+
+.horizontalScroll::-webkit-scrollbar {
+display: none; /_ Safari and Chrome _/
+}
+
+.horizontalScrollFades {
+position: absolute;
+top: 0;
+height: 100%;
+width: 36px;
+pointer-events: none;
+z-index: 6;
+background: linear-gradient(
+to right,
+rgba(255, 255, 255, 1) 30%,
+rgba(255, 255, 255, 0) 100%
+);
+}
+
+.horizontalScrollFades.left {
+left: 0;
+z-index: 2;
+transition: opacity 0.3s ease-in-out;
+opacity: 0;
+}
+
+.horizontalScrollFades.left.visible {
+opacity: 1;
+}
+
+.horizontalScrollFades.right {
+right: 0;
+transition: opacity 0.3s ease-in-out;
+opacity: 0;
+transform: rotate(180deg);
+}
+
+.horizontalScrollFades.right.visible {
+opacity: 1;
+}
+
+```
+</details>
+```

@@ -81,7 +81,15 @@ const sidebars: SidebarsConfig = {
     "Topics/HTML-CSS/CSS/TailwindCSS/TailwindCSS",
     "Topics/HTML-CSS/CSS/SASS",],
     },
+
+
+
       "Topics/Node/NodeJS/NodeJS",
+
+
+          "Topics/Design/UI/UI",
+          "Topics/Design/UX/UX",
+
 
 
     //         {
@@ -114,6 +122,14 @@ const sidebars: SidebarsConfig = {
       label: "Cyber Security",
       items: ["Topics/Cybersecurity/Books", "Topics/Cybersecurity/Courses"],
     },
+  ],
+
+    componentsSidebar: [
+
+   
+    "Components/HorizontalScroll/HorizontalScroll"
+
+    
   ],
   // projectSidebar: [
 

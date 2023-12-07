@@ -15,16 +15,18 @@ import Resources from "./\_resources.mdx";
 
 ## [TailwindCSS](https://tailwindcss.com/)
 
+![meme](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Uph8IP0agF_eDTt6-KZZmQ.jpeg)
+
 - [Beginner intro](https://kinsta.com/blog/tailwind-css/)
 - [Comprehensive Intro with Code](https://tsh.io/blog/tailwind-css-tutorial/)
+
 - [Documentation](https://tailwindcss.com/docs/installation)
 
-- [Forms](https://benjamincrozat.com/tailwind-css-forms-plugin)
+- [Styling faster with Tailwind CSS - Sérgio Junior](https://sergioamjr.medium.com/styling-with-tailwind-css-68bac7f1b06a)
 
-- What is TailwindCSS?
-- What is the purpose of TailwindCSS?
-- Why might we use TailwindCSS over CSS?
-- When might TailwindCSS not really the best option?
+- [Styling Best Practices I Use With Tailwind CSS - Theodorus Clarence](https://theodorusclarence.com/blog/tailwindcss-best-practice)
+
+- [Forms](https://benjamincrozat.com/tailwind-css-forms-plugin)
 
 ---
 

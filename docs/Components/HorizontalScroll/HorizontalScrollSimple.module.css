@@ -1,0 +1,9 @@
+.horizontalScrollWrapper {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+.horizontalScrollWrapper::-webkit-scrollbar {
+  display: none;
+}

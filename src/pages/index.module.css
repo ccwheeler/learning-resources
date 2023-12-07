@@ -21,3 +21,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.columns {
+  gap: 100px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}

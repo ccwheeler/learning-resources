@@ -75,6 +75,15 @@ const config: Config = {
           position: "left",
           label: "Learn 🤓",
         }, 
+        { to: "/docs/glossary", label: "Glossary 🔎", position: "left" },
+
+
+           {
+          type: "docSidebar",
+          sidebarId: "componentsSidebar",
+          position: "right",
+          label: "Components 🖌️",
+        }, 
         
         // {
         //   type: "docSidebar",

@@ -1,0 +1,79 @@
+/* HorizontalScrollFancy.module.css */
+
+.horizontalScrollWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.scrollArrow {
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.scrollArrow.left {
+  left: 1rem;
+  transform: scale(130%) rotate(180deg);
+}
+
+.scrollArrow.right {
+  right: 1rem;
+  transform: scale(130%);
+}
+
+.horizontalScroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex: row;
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.horizontalScroll::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.horizontalScrollFades {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 36px;
+  pointer-events: none;
+  z-index: 6;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.horizontalScrollFades.left {
+  left: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.horizontalScrollFades.left.visible {
+  opacity: 1;
+}
+
+.horizontalScrollFades.right {
+  right: 0;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.horizontalScrollFades.right.visible {
+  opacity: 1;
+}
