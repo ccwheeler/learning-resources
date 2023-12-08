@@ -21,11 +21,11 @@ const sidebars: SidebarsConfig = {
 
      {
       type: "category",
-      label: "Computer Science",
+      label: "Computer Science 💻",
 
       items: [
-    "Topics/Computer-Science/how-the-internet-works",
-    "Topics/Computer-Science/early-programming",
+    "Topics/Computer-Science/Internet",
+    "Topics/Computer-Science/Programming",
     "Topics/Computer-Science/Algorithms",
     "Topics/Computer-Science/computer-science",],
     },
@@ -44,17 +44,18 @@ const sidebars: SidebarsConfig = {
   
 {
       type: "category",
-      label: "Git 🥷 ⭐️",
+      label: "Git ⭐️",
       items: [      
 
    "Topics/Git/Git/Git",
     "Topics/Git/Github/Github",],
     },
-   
+      "Topics/Design/Inspiration",
+
 
   {
       type: "category",
-      label: "Application Programming Interface 🔌 🛜",
+      label: "APIs 🛜",
       items: [      
 
    "Topics/APIs/APIs",
@@ -64,11 +65,18 @@ const sidebars: SidebarsConfig = {
     "Topics/React/React",
 
 
+     {
+      type: "category",
+      label: "Node 🖼️",
+      items: [   "Topics/Node/NodeJS/NodeJS",
+            "Topics/Node/npm/npm",],
+    },
+
     "Topics/Tools/Dev-Tools",
 
       {
       type: "category",
-      label: "React Frameworks ⚙️ 🔭",
+      label: "React Frameworks ⚙️",
       items: [      
 
     "Topics/NextJS/NextJS",],
@@ -78,22 +86,35 @@ const sidebars: SidebarsConfig = {
 
         {
       type: "category",
-      label: "Advanced Styling 🎨 🖌️",
+      label: "Advanced Styling 🎨",
       items: [      
-    "Topics/HTML-CSS/CSS/Animations",
+    "Topics/HTML-CSS/CSS/Animations/Animations",
     "Topics/HTML-CSS/CSS/TailwindCSS/TailwindCSS",
     "Topics/HTML-CSS/CSS/SASS",],
     },
 
 
+     {
+      type: "category",
+      label: "Design 🖼️",
+      items: [ "Topics/Design/Inspiration","Topics/Design/UI/UI",
+          "Topics/Design/UX/UX",],
+    },
+  
 
-      "Topics/Node/NodeJS/NodeJS",
+
+    
 
 
-          "Topics/Design/UI/UI",
-          "Topics/Design/UX/UX",
+        
 
+            {
+      type: "category",
+      label: "Cloud Computing ☁️",
+      items: ["Topics/Cloud/Cloud/Cloud", "Topics/Cloud/Docker/Docker"],
+    },
 
+  "Topics/Architecture/Architecture",
 
     //         {
     //   type: "category",
@@ -111,18 +132,14 @@ const sidebars: SidebarsConfig = {
   //   },
    
 
+ 
+ 
 
-    {
-      type: "category",
-      label: "Cloud Infrastructure",
-      items: ["Topics/Cloud/Cloud"],
-    },
-
-
+    
 
       {
       type: "category",
-      label: "Cyber Security",
+      label: "Cyber Security 🔒",
       items: ["Topics/Cybersecurity/Books", "Topics/Cybersecurity/Courses"],
     },
   ],

@@ -13,17 +13,12 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
-        <div className={styles.columns}>
-          <div>
-            <Heading as="h1" className="hero__title">
-              {siteConfig.title}
-            </Heading>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
-            <div className={styles.buttons}></div>
-          </div>
-          <div>
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWttY3MxcGI3aWY5dTZhcm51OHNsZGtteXR0cGxreGxwdnJnMWptbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ZEUODEtQiUZWGg6IHR/giphy.gif" />
-          </div>
+        <div>
+          <Heading as="h1" className="hero__title">
+            {siteConfig.title}
+          </Heading>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}></div>
         </div>
       </div>
     </header>

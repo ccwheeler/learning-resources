@@ -16,4 +16,4 @@ can create do while loops and if statements
 
 which $SHELL to find ur shell
 
-- [BASH for beginners | Microsoft Developer](https://www.youtube.com/playlist?list=PLlrxD0HtieHh9ZhrnEbZKhzk0cetzuX7l)
+- [BASH for beginners - Microsoft Developer](https://www.youtube.com/playlist?list=PLlrxD0HtieHh9ZhrnEbZKhzk0cetzuX7l)

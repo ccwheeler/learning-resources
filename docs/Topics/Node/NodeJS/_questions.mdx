@@ -1,0 +1,89 @@
+
+                <details>
+                                        <summary>**What is Node.js?**</summary>
+
+Node.js is an open-source, server-side JavaScript runtime environment built on the V8 JavaScript engine. It allows developers to run JavaScript code on the server, enabling the development of scalable and high-performance web applications.
+
+                </details>
+
+                <details>
+                                        <summary>**What is meant by Blocking I/O and Non-Blocking I/O in the context of Node.js?**</summary>
+
+- **Blocking I/O:**
+  Blocking I/O refers to the traditional approach where the execution of a program is paused (blocks) until a particular I/O operation, such as reading from or writing to a file or making a network request, is completed. During this blocking period, the entire program is halted, and no other operations can proceed.
+
+- **Non-Blocking I/O:**
+  Non-Blocking I/O, on the other hand, allows a program to continue executing other operations without waiting for a particular I/O operation to complete. In a non-blocking model, the program initiates an I/O operation and continues with other tasks. When the I/O operation is finished, a callback function is invoked to handle the result.
+
+In the context of Node.js, the platform is designed to be non-blocking and asynchronous. Node.js uses an event-driven, single-threaded architecture to handle I/O operations efficiently. It employs callback functions and event loops to manage asynchronous tasks, allowing developers to write scalable and responsive applications.
+
+                </details>
+
+
+
+                <details>
+                                        <summary>**Explain the event-driven architecture of Node.js.**</summary>
+
+Node.js follows an event-driven architecture, where asynchronous events trigger the execution of callback functions. The event loop continually checks for events, and when an event occurs, the associated callback is executed. This model allows Node.js to efficiently handle a large number of concurrent connections without the need for threads.
+
+                </details>
+
+                <details>
+                                        <summary>**What is npm in the context of Node.js?**</summary>
+
+npm (Node Package Manager) is the default package manager for Node.js. It is used to install, manage, and share packages or libraries of JavaScript code. Developers use npm to add dependencies to their projects, making it easy to include external libraries and modules in their Node.js applications.
+
+                </details>
+
+                <details>
+                                        <summary>**Explain the concept of middleware in Express.js.**</summary>
+
+In Express.js, middleware are functions that have access to the request and response objects in an HTTP request-response cycle. They can modify these objects, perform additional tasks, or terminate the request-response cycle. Middleware functions can be used for tasks such as logging, authentication, error handling, etc., and they are executed sequentially in the order they are defined.
+
+                </details>
+
+                <details>
+                                        <summary>**What is the role of the `package.json` file in a Node.js project?**</summary>
+
+The `package.json` file is a metadata file in a Node.js project that contains information about the project, its dependencies, and various configuration settings. It includes details such as the project name, version, entry point, scripts, and dependencies. `package.json` is crucial for managing project dependencies, running scripts, and ensuring consistency across development environments.
+
+                </details>
+
+                <details>
+                                        <summary>**Explain the difference between `require` and `import` in Node.js.**</summary>
+
+In Node.js, `require` is the traditional way to include external modules. It is used in CommonJS modules and is synchronous. For example:
+
+```javascript
+const fs = require('fs');
+```
+
+In newer versions of Node.js that support ECMAScript modules (ESM), you can use `import` to achieve the same result. ESM is asynchronous and supports more advanced module features. For example:
+
+```javascript
+import fs from 'fs';
+```
+
+                </details>
+
+                <details>
+                                        <summary>**What is the purpose of the `process` object in Node.js?**</summary>
+
+The `process` object in Node.js provides information about the current Node.js process and allows interaction with the operating system. It includes properties and methods for accessing command line arguments, environment variables, standard input/output streams, and more. The `process` object is a global object in Node.js and does not require explicit import.
+
+                </details>
+
+                <details>
+                                        <summary>**Explain the role of the `fs` module in Node.js.**</summary>
+
+The `fs` (File System) module in Node.js provides methods for interacting with the file system. It allows developers to perform operations such as reading from and writing to files, creating directories, and managing file metadata. The `fs` module is part of Node.js's core modules and can be used synchronously or asynchronously.
+
+                </details>
+
+                <details>
+                                        <summary>**What is the purpose of the `Buffer` class in Node.js?**</summary>
+
+The `Buffer` class in Node.js is used to handle binary data directly. It represents a fixed-size chunk of memory, and instances of `Buffer` can be created to manipulate binary data, such as reading from or writing to streams, handling network protocols, or converting between character encodings.
+
+                </details>
+

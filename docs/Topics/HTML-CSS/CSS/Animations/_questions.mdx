@@ -1,0 +1,115 @@
+
+<details>
+<summary>**Explain the CSS `@keyframes` rule and its role in animations.**</summary>
+
+The `@keyframes` rule in CSS is used to define animations by gradually changing from one set of CSS styles to another. It specifies the percentages along the animation when the changes in styling occur. For example:
+
+```css
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+```
+
+This keyframe rule defines an animation named "slide-in" that moves an element from left to right.
+
+</details>
+
+<details>
+<summary>**How can you create a smooth transition in CSS?**</summary>
+
+To create a smooth transition in CSS, you can use the `transition` property. For example:
+
+```css
+.element {
+  transition: all 0.3s ease-in-out;
+}
+```
+
+This CSS rule specifies that any changes to the element's properties will be animated over a duration of 0.3 seconds with an ease-in-out timing function, creating a smooth transition effect.
+
+</details>
+
+<details>
+<summary>**Explain the difference between `transition` and `animation` in CSS.**</summary>
+
+The `transition` property in CSS is used to smoothly animate changes in property values over a specified duration. It is triggered by a state change (e.g., hover).
+
+The `animation` property, on the other hand, is more versatile. It allows the creation of complex animations by defining keyframes using the `@keyframes` rule. Animations can be controlled, paused, and reversed. Unlike transitions, animations don't necessarily need a trigger state change.
+
+</details>
+
+<details>
+<summary>**What is the purpose of the CSS `transform` property in animations?**</summary>
+
+The `transform` property in CSS is used to modify the visual presentation of an element by applying transformations such as translation, rotation, scaling, and skewing. It is often used in animations to create effects like movement, rotation, or scaling.
+
+```css
+.element {
+  transform: translateX(50px);
+}
+```
+
+This CSS rule translates the element horizontally by 50 pixels.
+
+</details>
+
+<details>
+<summary>**How can you create a fade-in animation in CSS?**</summary>
+
+You can create a fade-in animation using the `opacity` property and the `@keyframes` rule. For example:
+
+```css
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.element {
+  animation: fade-in 0.5s ease-in-out;
+}
+```
+
+This keyframe rule defines a fade-in animation, and the element with the class "element" will gradually fade in over a duration of 0.5 seconds.
+
+</details>
+
+<details>
+<summary>**How can you make an element rotate continuously in CSS?**</summary>
+
+You can make an element rotate continuously using the `@keyframes` rule and the `transform` property. For example:
+
+```css
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.element {
+  animation: rotate 2s linear infinite;
+}
+```
+
+This keyframe rule defines a rotation animation, and the element with the class "element" will rotate 360 degrees continuously over a duration of 2 seconds.
+
+</details>
+
+<details>
+<summary>**What is SVG, and how is it different from other image formats?**</summary>
+
+SVG stands for Scalable Vector Graphics. It is an XML-based file format for describing vector graphics. Unlike raster image formats (e.g., JPEG or PNG), SVG images are resolution-independent and can be scaled without losing quality. SVG graphics are defined by mathematical equations, making them suitable for various screen sizes and resolutions.
+
+</details>
+
