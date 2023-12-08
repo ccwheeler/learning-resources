@@ -6,6 +6,8 @@ import Resources from "./\_resources.mdx";
 
 <div class="beginner">
 
+- [Typescript .d.ts File - WittCode](https://www.youtube.com/watch?v=qUIs-uwmXlk)
+
 </div>
 
 <div class="intermediate">

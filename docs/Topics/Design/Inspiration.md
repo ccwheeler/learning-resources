@@ -1,5 +1,7 @@
 # Website Inspiration
 
+Get yourself inspired by other people's work and get excited about building things!
+
 ### Code Snippets and Demos
 
 - [Tympanus (press `previous demo` to explore)](https://tympanus.net/Development/SlicedTextEffect/)

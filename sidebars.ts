@@ -50,7 +50,6 @@ const sidebars: SidebarsConfig = {
    "Topics/Git/Git/Git",
     "Topics/Git/Github/Github",],
     },
-      "Topics/Design/Inspiration",
 
 
   {
@@ -97,12 +96,18 @@ const sidebars: SidebarsConfig = {
      {
       type: "category",
       label: "Design 🖼️",
-      items: [ "Topics/Design/Inspiration","Topics/Design/UI/UI",
+      items: [ "Topics/Design/UI/UI",
           "Topics/Design/UX/UX",],
     },
   
 
 
+
+             {
+      type: "category",
+      label: "Terminal, OS 🎮",
+      items: ["Topics/Terminal/BASH", "Topics/Terminal/Operating-System"],
+    },
     
 
 
@@ -150,7 +155,10 @@ const sidebars: SidebarsConfig = {
     "Components/HorizontalScroll/HorizontalScroll"
 
     
-  ],
+  
+
+]
+
   // projectSidebar: [
 
   //    {

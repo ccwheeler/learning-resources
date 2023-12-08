@@ -7,7 +7,10 @@
 - [Electronic Computing: Crash Course Computer Science #2 - CrashCourse](https://www.youtube.com/watch?v=LN0ucKNX0hc)
 
 - [How does the INTERNET work? | ICT #2 - Lesics](https://www.youtube.com/watch?v=x3c1ih2NJEg)
+
 - [How The Web Works - The Big Picture - Academind](https://www.youtube.com/watch?v=hJHvdBlSxug)
+
+- [Optical fiber cables, how do they work? | ICT #3 - Lesics](https://www.youtube.com/watch?v=jZOg39v73c4)
 
 </div>
 

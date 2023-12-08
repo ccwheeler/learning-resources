@@ -76,6 +76,7 @@ const config: Config = {
           label: "Learn 🤓",
         }, 
         { to: "/docs/glossary", label: "Glossary 🔎", position: "left" },
+        { to: "/docs/Topics/Design/Inspiration", label: "Inpsiration 💡", position: "left" },
 
 
            {
