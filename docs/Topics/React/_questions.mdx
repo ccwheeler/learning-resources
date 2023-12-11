@@ -1,34 +1,169 @@
-# Quiz
+<div className="beginner">
 
-- What is React?
 
-## The DOM
+<details>
 
-- What is **ReactDOM**?
-- What is the most performance-wise expensive thing you can do?
-- What is **Reconciliation**?
+<summary >**What is React?**</summary>
 
-## Function Components
+    React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and efficiently update the UI in response to data changes.
+</details>
 
-- What do JavaScript **function components** return?
-- Why do we use **components**?
-- What is the difference between **imperative** and **declarative**?
-- What is **JSX**?
-- What do **attributes** in JSX become?
-- What does **Babel** do?
-- What is **Webpack** for?
-- Why can't we **nest** function definitions within each other?
-- What are **props**?
-- What is the difference between Declarative and Imperative?
-- What does the **spread operator** do?
-- What is a pure function?
-- What does the `map()` array method do?
-- What do we usually use `map()` for in React?
-- Why is `map()` better than just creating the components manually by typing them out?
-- What does the spread operator `...item` do?
-- Describe the difference between state and context.
-- What is the term for passing props through multiple child components?
-- What are props in React?
-- What are HOCs? What are HOFs?
-- What are Closures?
-- Why do we use **hooks**?
+
+
+
+<details>
+    <summary>**What is ReactDOM?**</summary>
+
+    ReactDOM is a package that provides DOM-specific methods for rendering React components. It is used to render React components in the browser.
+</details>
+
+
+
+<details>
+    <summary>**What is the most performance-wise expensive thing you can do?**</summary>
+
+    Re-rendering the entire component tree is often the most performance-expensive operation in React.
+</details>
+
+<details>
+    <summary>**What is Reconciliation?**</summary>
+
+    Reconciliation is the process by which React updates the DOM efficiently to match the most recent component state.
+</details>
+
+<details>
+    <summary>**What do JavaScript function components return?**</summary>
+
+    Function components in React return JSX (JavaScript XML), which is a syntax extension for JavaScript recommended by React for describing what the UI should look like.
+</details>
+
+<details>
+    <summary>**Why do we use components?**</summary>
+
+    Components help in building modular, reusable, and maintainable UI structures. They encapsulate the logic and presentation of a part of the UI.
+</details>
+
+<details>
+    <summary>**What is JSX?**</summary>
+
+    JSX (JavaScript XML) is a syntax extension for JavaScript recommended by React. It looks similar to XML/HTML and is used to describe the structure of UI elements in React.
+</details>
+
+<details>
+    <summary>**What is Babel for?**</summary>
+
+    Babel is a JavaScript compiler that allows developers to use the latest ECMAScript features by transforming the code into a backward-compatible version of JavaScript that can run in older browsers.
+</details>
+
+<details>
+    <summary>**What is Webpack for?**</summary>
+
+    Webpack is a module bundler for JavaScript applications. It takes the different parts of a web application, such as JavaScript, CSS, and images, and bundles them together for efficient delivery to the browser.
+</details>
+
+<details>
+    <summary>**What are props in React?**</summary>
+
+    Props (short for properties) are used to pass data from a parent component to a child component in React. They are immutable and allow components to communicate.
+</details>
+
+<details>
+    <summary>**What are HOCs? What are HOFs?**</summary>
+
+    HOCs (Higher Order Components) are functions that take a component and return a new component with enhanced features. HOFs (Higher Order Functions) are functions that take one or more functions as arguments and return a new function.
+</details>
+
+<details>
+    <summary>**Why do we use hooks?**</summary>
+
+    Hooks in React are used to add state and lifecycle features to functional components. They allow functional components to manage state and have side effects.
+</details>
+
+<details>
+    <summary>**What are React Hooks?**</summary>
+
+    React Hooks are functions that allow functional components to use state and lifecycle features that were previously only available in class components. Examples include `useState`, `useEffect`, and `useContext`.
+</details>
+
+<details>
+    <summary>**What is the purpose of the `useState` hook?**</summary>
+
+    The `useState` hook is used to add state to functional components in React. It returns an array with two elements: the current state value and a function that allows you to update the state.
+</details>
+
+<details>
+    <summary>**What does the `useEffect` hook do?**</summary>
+
+    The `useEffect` hook is used for side effects in functional components. It allows you to perform tasks like data fetching, subscriptions, or manually changing the DOM after the component has rendered.
+</details>
+
+</div>
+<div className="intermediate">
+
+<details>
+    <summary>**Explain the purpose of the `useCallback` hook.**</summary>
+
+    The `useCallback` hook is used to memoize functions, preventing unnecessary re-creations of functions on each render. It is especially useful in scenarios where functions are passed as props to child components.
+</details>
+
+<details>
+    <summary>**Why is `useEffect` necessary, and when might you use it?**</summary>
+
+    `useEffect` is necessary for handling side effects in functional components, such as data fetching, subscriptions, or manual DOM manipulations. It is used when you need to perform actions after the initial render or in response to changes in dependencies.
+</details>
+
+<details>
+    <summary>**Can you explain the differences between `useMemo` and `useCallback`?**</summary>
+
+    Both `useMemo` and `useCallback` are used to memoize values, but `useMemo` is for memoizing values (e.g., computed calculations), while `useCallback` is for memoizing functions.
+</details>
+
+<details>
+    <summary>**How does the `useReducer` hook work, and when might you use it?**</summary>
+
+    The `useReducer` hook is an alternative to `useState` for managing more complex state logic. It takes a reducer function and an initial state, returning the current state and a dispatch function. It's useful when state transitions depend on the previous state or involve complex logic.
+</details>
+
+<details>
+    <summary>**What are the rules of Hooks in React?**</summary>
+
+    Rules of Hooks in React include calling hooks only at the top level of your components and not calling hooks inside loops, conditions, or nested functions. This ensures that hooks are called in the same order on every render.
+</details>
+
+<details>
+    <summary>**How do you share stateful logic between components?**</summary>
+
+    Custom Hooks provide a way to share stateful logic between components. You can create a custom hook as a function and use it in multiple components to reuse state and behavior logic.
+</details>
+
+<details>
+    <summary>**Describe the difference between state and context.**</summary>
+
+    State is used to manage data within a component, while context provides a way to pass data through the component tree without having to pass props manually at every level.
+</details>
+
+<details>
+    <summary>**What is the term for passing props through multiple child components?**</summary>
+
+    Prop drilling is the term used for passing props through multiple layers of nested components, which can lead to code maintainability issues.
+</details>
+
+<details>
+    <summary>**What does the spread operator ...item do?**</summary>
+
+    The spread operator is used for shallow copying objects or arrays. In React, it is often used to create new props or state objects without mutating the original.
+</details>
+
+<details>
+    <summary>**What is the concept of currying in JavaScript?**</summary>
+
+    Currying is the technique of converting a function that takes multiple arguments into a series of functions that each take a single argument. It facilitates partial application.
+</details>
+
+<details>
+    <summary>**How does the JavaScript async/await syntax work under the hood?**</summary>
+    
+    async/await is built on top of Promises and the event loop. The async function returns a Promise, and await is used to pause execution until the Promise is resolved.
+</details>
+
+</div>

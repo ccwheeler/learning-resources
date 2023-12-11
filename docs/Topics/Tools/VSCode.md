@@ -9,3 +9,9 @@
 ### ESLint
 
 - [Customizing Eslint with eslintrc - WittCode](https://www.youtube.com/watch?v=Lf2YqrwO9SQ)
+
+# Smaller IDEs for mini projects / following tutorials
+
+- [StackBlitz](https://stackblitz.com/)
+- [CodePen](https://codepen.io/)
+- [Code Sandbox](https://codesandbox.io/)
