@@ -8,6 +8,12 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R-BKadZWYnQ?si=sA4q0GzXxkjSXCYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+# I
+
+### Instantiation
+
+Instantiation is a computer programming term, used by developers, that is usually related to Object-Oriented Programming (OOP). At its core, instantiation is the process of creating an Instance of an Object. Objects are structures created by Classes, which are essentially blueprints – or templates – that describe a set of features that will belong to Objects created from them. These “features” include Properties – also known as variables – and Methods.
+
 # L
 
 ### Lazy Loading

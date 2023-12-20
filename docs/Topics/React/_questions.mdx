@@ -113,6 +113,13 @@
 </details>
 
 <details>
+    <summary>**When does a `useEffect` run?**</summary>
+
+ After the render function ends, there is a brief pause and `useEffect` runs milliseconds later. It often runs twice which is sometimes seen as better than only running once, so it has more chances to execute correctly.  
+</details>
+
+
+<details>
     <summary>**Can you explain the differences between `useMemo` and `useCallback`?**</summary>
 
     Both `useMemo` and `useCallback` are used to memoize values, but `useMemo` is for memoizing values (e.g., computed calculations), while `useCallback` is for memoizing functions.
@@ -164,6 +171,26 @@
     <summary>**How does the JavaScript async/await syntax work under the hood?**</summary>
     
     async/await is built on top of Promises and the event loop. The async function returns a Promise, and await is used to pause execution until the Promise is resolved.
+</details>
+
+
+<details>
+    <summary>**When does a `useLayoutEffect` run?**</summary>
+
+    `useEffect` runs milliseconds after the render function ends. There is a brief pause, this can cause a strange repainting scenario - which is why sometimes we would instead use `useLayoutEffect`. 
+    `useLayoutEffect` happens immediately after the render function ends, synchronously, it will run. One re-render rather than two! Use when something needs to be measured after the render of the dom.
+    It's recommended to only use it with animations
+</details>
+
+
+<details>
+    <summary>**What does  `useId` do?**</summary>
+
+    `useId` generates a unique id, it can be used with the same name multiple times, under the hood it generates unique ids that are consitent across renders.
+    They begin from 0 and look like `:r0:` - this pattern prevents selection with css selectors. 
+    - ✅ Cleaner than making a counter.
+    - ✅ generates a unique id consitent within a component (per instantiation)
+    - ✅ safe across server-side renders and client side
 </details>
 
 </div>
