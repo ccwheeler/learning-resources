@@ -19,16 +19,7 @@ const sidebars: SidebarsConfig = {
 
   frontendSidebar: [
 
-     {
-      type: "category",
-      label: "Computer Science 💻",
-
-      items: [
-    "Topics/Computer-Science/Internet",
-    "Topics/Computer-Science/Programming",
-    "Topics/Computer-Science/Algorithms",
-    "Topics/Computer-Science/computer-science",],
-    },
+  
     "Topics/Tools/VSCode",
 
     "Topics/HTML-CSS/HTML/HTML",
@@ -39,6 +30,7 @@ const sidebars: SidebarsConfig = {
     
     "Topics/Node/npm/npm",
 
+   
 
     
   
@@ -49,6 +41,17 @@ const sidebars: SidebarsConfig = {
 
    "Topics/Git/Git/Git",
     "Topics/Git/Github/Github",],
+    },
+
+        {
+      type: "category",
+      label: "Computer Science 💻",
+
+      items: [
+    "Topics/Computer-Science/Internet",
+    "Topics/Computer-Science/Programming",
+    "Topics/Computer-Science/Algorithms",
+    "Topics/Computer-Science/computer-science",],
     },
 
 
@@ -120,6 +123,17 @@ const sidebars: SidebarsConfig = {
     },
 
   "Topics/Architecture/Architecture",
+  
+  
+
+             {
+      type: "category",
+      label: "AI 🤖",
+      items: ["Topics/AI/AI"],
+    },
+
+
+  
 
     //         {
     //   type: "category",

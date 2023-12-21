@@ -102,3 +102,50 @@ Vendor prefixes are used to add browser-specific CSS features. While their usage
 The `transition` property in CSS is used to create smooth animations when a property value changes. By specifying the property to be transitioned, the duration of the transition, and other optional parameters, developers can add visual effects to elements on hover, click, or other interactions.
 
         </details>
+
+     <details>
+                    <summary>**Explain `is()`, `not()` and `where()`**</summary>
+
+```css
+article:is(h1, h2, h3:not(aside h3), h4) {
+  color: red
+}
+
+// same as 
+
+article h1, article h2, article h3:not(aside h3), article h4 {
+  color: red;
+}
+```
+
+`not()` excludes that particular style
+        </details>
+
+
+
+     <details>
+                    <summary>**Explain `has()`**</summary>
+
+```css
+ul:has(li:nth-child(6)) {
+  columns: 2;
+}
+
+ul:has(li:nth-child(11)) {
+  columns: 3;
+}
+```
+
+`has()` is looking for patterns to match a given WebAssembly. Here we've made a list that conditionally changes for big and small lists.
+        </details>
+
+
+
+<details>
+<summary>**Explain inheritance, specificity and cascade**</summary>
+
+- inheritance: styling applies to descendants unless overwritten
+- specificity: relevance of a given style to the selected portion on the page
+- cascade: how styles are combined by browser when they come from different sources
+
+</details>
