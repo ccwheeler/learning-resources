@@ -11,6 +11,8 @@ import Resources from "./\_resources.mdx";
 
 - https://www.freecodecamp.org/news/search/?query=css/
 
+- [Tailwind CSS - Steve Kinney](https://frontendmasters.com/courses/tailwind-css/)
+
 ### FlexBox
 
 ## [TailwindCSS](https://tailwindcss.com/)

@@ -20,14 +20,14 @@ const sidebars: SidebarsConfig = {
   frontendSidebar: [
 
   
-    "Topics/Tools/VSCode",
-
+    
     "Topics/HTML-CSS/HTML/HTML",
- "Topics/HTML-CSS/CSS/CSS/CSS",
-   
-
+    "Topics/HTML-CSS/CSS/CSS/CSS",
+    
+    
     "Topics/Javascript/Javascript",
     
+    "Topics/Tools/VSCode",
     "Topics/Node/npm/npm",
 
    
@@ -65,6 +65,7 @@ const sidebars: SidebarsConfig = {
     },
 
     "Topics/React/React",
+    "Topics/Qwik/Qwik",
 
 
      {
