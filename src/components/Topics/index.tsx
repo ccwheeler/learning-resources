@@ -28,6 +28,12 @@ const topicList: TopicItem[] = [
     image:
       "//media0.giphy.com/media/hUhARUMJB4OsRMXJ6l/200w.webp?cid=ecf05e47cnfozh2ae51nnjcd5czqw0l12bmbmr68az3bi97i&ep=v1_gifs_search&rid=200w.webp&ct=g",
   },
+
+  {
+    title: "Computer Science",
+    path: "/docs/Topics/Computer-Science/Basics",
+    image: "https://media.giphy.com/media/9J7tdYltWyXIY/giphy.gif",
+  },
   {
     title: "React",
     path: "/docs/Topics/React/",

@@ -43,16 +43,10 @@ const sidebars: SidebarsConfig = {
     "Topics/Git/Github/Github",],
     },
 
-        {
-      type: "category",
-      label: "Computer Science 💻",
+     
 
-      items: [
-    "Topics/Computer-Science/Internet",
-    "Topics/Computer-Science/Programming",
-    "Topics/Computer-Science/Algorithms",
-    "Topics/Computer-Science/computer-science",],
-    },
+
+        "Topics/Computer-Science/Basics",
 
 
   {
@@ -65,7 +59,7 @@ const sidebars: SidebarsConfig = {
     },
 
     "Topics/React/React",
-    "Topics/Qwik/Qwik",
+
 
 
      {
@@ -77,13 +71,21 @@ const sidebars: SidebarsConfig = {
 
     "Topics/Tools/Dev-Tools",
 
+            {
+      type: "category",
+      label: "Terminal, OS 🎮",
+      items: ["Topics/Terminal/BASH", "Topics/Terminal/Operating-System"],
+    },
+
       {
       type: "category",
       label: "React Frameworks ⚙️",
       items: [      
 
-    "Topics/NextJS/NextJS",],
+    "Topics/NextJS/NextJS",     "Topics/Qwik/Qwik",],
     },
+
+
 
     
 
@@ -107,11 +109,7 @@ const sidebars: SidebarsConfig = {
 
 
 
-             {
-      type: "category",
-      label: "Terminal, OS 🎮",
-      items: ["Topics/Terminal/BASH", "Topics/Terminal/Operating-System"],
-    },
+     
     
 
 
@@ -127,23 +125,13 @@ const sidebars: SidebarsConfig = {
   
   
 
-             {
-      type: "category",
-      label: "AI 🤖",
-      items: ["Topics/AI/AI"],
-    },
+    "Topics/AI/AI",
+    
 
 
   
 
-    //         {
-    //   type: "category",
-    //   label: "Databases",
-    //   items: [      
-    // "Topics/HTML-CSS/CSS/Animations", // SQL
-    // "Topics/HTML-CSS/CSS/TailwindCSS/TailwindCSS",
-    // "Topics/HTML-CSS/CSS/SASS",],
-    // },
+  
    
   // {
   //     type: "category",
@@ -157,11 +145,8 @@ const sidebars: SidebarsConfig = {
 
     
 
-      {
-      type: "category",
-      label: "Cyber Security 🔒",
-      items: ["Topics/Cybersecurity/Books", "Topics/Cybersecurity/Courses"],
-    },
+   "Topics/Cybersecurity/Courses",
+    
   ],
 
     componentsSidebar: [

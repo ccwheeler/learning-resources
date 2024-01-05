@@ -3,8 +3,8 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "💻 Become a Software Engineer 💻",
-  tagline: "All the 🤓 resources I've collected on my journey to Senior 👩‍💻 🚀, it's all split up by topic 📚, so pick and choose what works for 🫵.",
+  title: "💻 Become a Full-Stack Software Engineer 💻",
+  tagline: "All the 🤓 resources I've collected on my journey to Senior Developer 👩‍💻 🚀, it's all split up by topic 📚, so pick and choose what works for 🫵.",
   // favicon: "img/favicon.ico",
 
   // Set the production url of your site here
