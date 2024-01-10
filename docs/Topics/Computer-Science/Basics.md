@@ -1,9 +1,5 @@
 # Computer Science 💻
 
-Ever wondered how that cat video or the latest meme finds its way to your screen, almost like magic? Well, it's not Hogwarts, but the internet, a mystical realm where websites live on distant servers, akin to far-off galaxies. Every time you type in a web address or click on a link, your computer embarks on an epic quest through the digital cosmos. It travels at the speed of light across cables, routers, and maybe encounters a few digital dragons (also known as firewalls), to fetch that website for you.
-
-Learning how this works is like getting a backstage pass to the greatest show on Earth, revealing how those pixels and texts from a faraway land (server) end up dancing on your screens. Who wouldn't want to be the wizard behind that curtain?
-
 <div class="beginner">
 ## How the internet works
 
@@ -57,10 +53,12 @@ Learning how this works is like getting a backstage pass to the greatest show on
 
 - [domenlightenment](https://domenlightenment.com/)
 
+</div>
+
+<div class="expert">
 # Algorithms
 
 - [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/)
 
 - [Practical Problem Solving with Algorithms](https://frontendmasters.com/courses/algorithms-practice/)
-
 </div>

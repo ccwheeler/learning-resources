@@ -77,16 +77,10 @@ const sidebars: SidebarsConfig = {
       items: ["Topics/Terminal/BASH", "Topics/Terminal/Operating-System"],
     },
 
-      {
-      type: "category",
-      label: "React Frameworks ⚙️",
-      items: [      
-
-    "Topics/NextJS/NextJS",     "Topics/Qwik/Qwik",],
-    },
+     "Topics/NextJS/NextJS",
 
 
-
+ 
     
 
         {
@@ -109,7 +103,7 @@ const sidebars: SidebarsConfig = {
 
 
 
-     
+   
     
 
 
@@ -124,6 +118,8 @@ const sidebars: SidebarsConfig = {
   "Topics/Architecture/Architecture",
   
   
+
+  "Topics/Qwik/Qwik",
 
     "Topics/AI/AI",
     

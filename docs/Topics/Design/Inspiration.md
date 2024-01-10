@@ -8,6 +8,8 @@ Get yourself inspired by other people's work and get excited about building thin
 
 ### Great Websites
 
+- [Hoxton Farms](https://hoxtonfarms.com/)
+
 - [Awwwards - Website awards](https://www.awwwards.com/websites/sites_of_the_day/)
 
 - [Studio Freight](https://studiofreight.com/)
