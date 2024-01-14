@@ -77,14 +77,16 @@ const config: Config = {
         }, 
         { to: "/docs/glossary", label: "Glossary 🔎", position: "left" },
         { to: "/docs/Topics/Design/Inspiration", label: "Inpsiration 💡", position: "left" },
+        // { to: "/docs/project-ideas", label: "Project Ideas", position: "left" },
+        { to: "/docs/test-knowledge", label: "Test Knowledge 🧠", position: "left" },
 
 
-           {
-          type: "docSidebar",
-          sidebarId: "componentsSidebar",
-          position: "right",
-          label: "Components 🖌️",
-        }, 
+        //    {
+        //   type: "docSidebar",
+        //   sidebarId: "componentsSidebar",
+        //   position: "right",
+        //   label: "Components 🖌️",
+        // }, 
         
         // {
         //   type: "docSidebar",
