@@ -16,144 +16,88 @@ const sidebars: SidebarsConfig = {
 
   // But you can create a sidebar manually
 
-
   frontendSidebar: [
 
-  
-    
-    "Topics/HTML-CSS/HTML/HTML",
-    "Topics/HTML-CSS/CSS/CSS/CSS",
-    
-    
+    "Topics/HTML/HTML",
+    "Topics/CSS/CSS/CSS",
+
     "Topics/Javascript/Javascript",
-    
+
     "Topics/Tools/VSCode",
     "Topics/Node/npm/npm",
 
-   
-
-    
-  
-{
+    {
       type: "category",
       label: "Git ⭐️",
-      items: [      
-
-   "Topics/Git/Git/Git",
-    "Topics/Git/Github/Github",],
+      items: ["Topics/Git/Git/Git", "Topics/Git/Github/Github"],
     },
 
-     
+    "Topics/Computer-Science/Basics",
 
-
-        "Topics/Computer-Science/Basics",
-
-
-  {
+    {
       type: "category",
       label: "APIs 🛜",
-      items: [      
-
-   "Topics/APIs/APIs",
-    "Topics/APIs/GraphQL",],
+      items: ["Topics/APIs/APIs", "Topics/APIs/GraphQL"],
     },
 
     "Topics/React/React",
+    
+    
 
-
-
-     {
+    {
       type: "category",
       label: "Node 🖼️",
-      items: [   "Topics/Node/NodeJS/NodeJS",
-            "Topics/Node/npm/npm",],
+      items: ["Topics/Node/NodeJS/NodeJS", "Topics/Node/npm/npm"],
     },
-
     "Topics/Tools/Dev-Tools",
 
-            {
+    "Topics/NextJS/NextJS",
+
+    "Topics/Typescript/Typescript",
+"test-knowledge",
+    {
       type: "category",
       label: "Terminal, OS 🎮",
       items: ["Topics/Terminal/BASH", "Topics/Terminal/Operating-System"],
     },
 
-     "Topics/NextJS/NextJS",
-
-
- 
-    
-
-        {
+    {
       type: "category",
       label: "Advanced Styling 🎨",
-      items: [      
-    "Topics/HTML-CSS/CSS/Animations/Animations",
-    "Topics/HTML-CSS/CSS/TailwindCSS/TailwindCSS",
-    "Topics/HTML-CSS/CSS/SASS",],
+      items: [
+        "Topics/CSS/Animations/Animations",
+        "Topics/CSS/TailwindCSS/TailwindCSS",
+        "Topics/CSS/SASS",
+      ],
     },
 
-
-     {
+    {
       type: "category",
       label: "Design 🖼️",
-      items: [ "Topics/Design/UI/UI",
-          "Topics/Design/UX/UX",],
+      items: ["Topics/Design/UI/UI", "Topics/Design/UX/UX"],
     },
-  
 
-
-
-   
-    
-
-
-        
-
-            {
+    {
       type: "category",
       label: "Cloud Computing ☁️",
       items: ["Topics/Cloud/Cloud/Cloud", "Topics/Cloud/Docker/Docker"],
     },
 
-  "Topics/Architecture/Architecture",
-  
-  
+    "Topics/Architecture/Architecture",
 
-  "Topics/Qwik/Qwik",
-
-    "Topics/AI/AI",
-    
-
-
-  
-
-  
-   
-  // {
-  //     type: "category",
-  //     label: "Clean Code",
-  //     items: [],
-  //   },
-   
-
- 
- 
-
-    
-
-   "Topics/Cybersecurity/Courses",
-    
+    {
+      type: "category",
+      label: "AI",
+      items: ["Topics/AI/AI", "Topics/AI/LLM"],
+    },
+    "glossary",
+    // {
+    //     type: "category",
+    //     label: "Clean Code",
+    //     items: [],
+    //   },
   ],
 
-    componentsSidebar: [
-
-   
-    "Components/HorizontalScroll/HorizontalScroll"
-
-    
-  
-
-]
 
   // projectSidebar: [
 
@@ -164,9 +108,7 @@ const sidebars: SidebarsConfig = {
   //   },
   //   "Projects/Marketplace"
 
-    
   // ],
-  
 };
 
 export default sidebars;

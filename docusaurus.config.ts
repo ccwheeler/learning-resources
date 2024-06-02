@@ -3,6 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
+  
   title: "💻 Become a Full-Stack Software Engineer 💻",
   tagline: "All the 🤓 resources I've collected on my journey to Senior Developer 👩‍💻 🚀, it's all split up by topic 📚, so pick and choose what works for 🫵.",
   // favicon: "img/favicon.ico",
@@ -15,11 +16,11 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "learnwithlottie", // Usually your GitHub org/user name.
-  projectName: "learnwithlottie", // Usually your repo name.
+  organizationName: "picklepanini", // Usually your GitHub org/user name.
+  projectName: "picklepanini", // Usually your repo name.
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "ignore",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -35,21 +36,22 @@ const config: Config = {
       "classic",
       {
         docs: {
-          sidebarPath: "./sidebars.ts",
+                    routeBasePath: '/',
+          // sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          sidebarCollapsed: true,
+          // sidebarCollapsed: true,
 
           // editUrl:
           // "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          // "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl:
+        //   // "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        // },
         theme: {
           customCss: ["./src/css/custom.scss"],
         },
@@ -58,6 +60,12 @@ const config: Config = {
   ],
 
   themeConfig: {
+     docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: false,
+      },
+    },
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
@@ -69,16 +77,16 @@ const config: Config = {
       items: [
       
 
-        {
-          type: "docSidebar",
-          sidebarId: "frontendSidebar",
-          position: "left",
-          label: "Learn 🤓",
-        }, 
-        { to: "/docs/glossary", label: "Glossary 🔎", position: "left" },
-        { to: "/docs/Topics/Design/Inspiration", label: "Inpsiration 💡", position: "left" },
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "frontendSidebar",
+        //   position: "left",
+        //   label: "Learn 🤓",
+        // }, 
+        // { to: "/docs/glossary", label: "Glossary 🔎", position: "right" },
+        // { to: "/Design/Inspiration", label: "Inpsiration 💡", position: "left" },
         // { to: "/docs/project-ideas", label: "Project Ideas", position: "left" },
-        { to: "/docs/test-knowledge", label: "Test Knowledge 🧠", position: "left" },
+        // { to: "/docs/test-knowledge", label: "Test Knowledge 🧠", position: "left" },
 
 
         //    {
